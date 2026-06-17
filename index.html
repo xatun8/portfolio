@@ -10,24 +10,18 @@
 			/* Şəklin oval olmasını düzəldir və tam dairə edir */
 			.image.fit img {
 				width: 100%;
-				max-width: 280px; /* Çox böyük olmaması üçün limit */
-				aspect-ratio: 1 / 1; /* Hündürlük və eni bərabərləşdirir */
-				object-fit: cover; /* Şəklin daxildə dartılmasını önləyir */
-				border-radius: 50%; /* Tam dairəvi kəsim */
+				max-width: 280px; 
+				aspect-ratio: 1 / 1; 
+				object-fit: cover; 
+				border-radius: 50%; 
 				margin: 0 auto;
 				display: block;
 			}
 
-			/* Yazıların bir-birinin içinə girməsini önləyir və ad-soyadı qızılı edir */
+			/* Yazıların bir-birinin içinə girməsini önləyir */
 			#top h1 {
 				line-height: 1.2 !important;
 				margin-bottom: 20px !important;
-			}
-			
-			/* Ad və soyadın qızılı rəngi */
-			#top h1 strong {
-				color: #FFD700 !important;
-				text-shadow: 0 0 10px rgba(255, 215, 0, 0.2);
 			}
 		</style>
 	</head>
@@ -147,19 +141,19 @@
 					</header>
 					<div class="row">
 						<div class="col-12">
-							<form method="post" action="#">
+							<form method="POST" action="https://formspree.io/f/mrevvpqv">
 								<div class="row">
 									<div class="col-6 col-12-small">
-										<input type="text" name="name" id="name" placeholder="Adınız" />
+										<input type="text" name="name" id="name" placeholder="Adınız" required />
 									</div>
 									<div class="col-6 col-12-small">
-										<input type="text" name="email" id="email" placeholder="Email ünvanınız" />
+										<input type="email" name="email" id="email" placeholder="Email ünvanınız" required />
 									</div>
 									<div class="col-12">
-										<input type="text" name="subject" id="subject" placeholder="Mövzu" />
+										<input type="text" name="subject" id="subject" placeholder="Mövzu" required />
 									</div>
 									<div class="col-12">
-										<textarea name="message" id="message" placeholder="Mesajınız"></textarea>
+										<textarea name="message" id="message" placeholder="Mesajınız" required></textarea>
 									</div>
 									<div class="col-12">
 										<ul class="actions">
@@ -182,7 +176,7 @@
 					</div>
 					<footer>
 						<ul id="copyright">
-							<li>&copy; 2026 Xatun Abdullayeva. Bütün hüquqlar qorunur.</li>
+							<li>&copy; 2026 Xatun Abdullayeva. Bütün hüquqlar qorunur.</li><li>Dizayn: <a href="http://html5up.net">HTML5 UP</a></li>
 						</ul>
 					</footer>
 				</div>
